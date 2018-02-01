@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travix.Services.BusinessLogic\Travix.Services.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Travix.Services.Comments.BusinessLogic\Travix.Services.Comments.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Travix.Services.Contracts\Travix.Services.Contracts.csproj" />
+    <ProjectReference Include="..\Travix.Services.Core\Travix.Services.Core.csproj" />
+    <ProjectReference Include="..\Travix.Services.DataAccess\Travix.Services.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
